@@ -28,6 +28,9 @@
 ![image](https://github.com/OOUPSS/OOUPSS/blob/main/timewaka08.01.png?raw=true)
 
 
-&nbsp;
-
+<p align="center">
+  <a href="https://www.gnu.org/licenses/gpl-3.0.html">
+    <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License Badge">
+  </a>
+</p>
 
