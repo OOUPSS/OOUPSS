@@ -27,6 +27,11 @@
 
 ![image](https://github.com/OOUPSS/OOUPSS/blob/main/timewaka08.01.png?raw=true)
 
-**All Rights Reserved.**
 
+This project uses code from the repository:
+https://github.com/kittinan/spotify-github-profile
+Created by kittinan, licensed under the MIT License.
+
+**All Rights Reserved.**
+This means that no materials can be used, copied, modified, or distributed without my explicit permission. For permission, please contact the repository owner.
 
