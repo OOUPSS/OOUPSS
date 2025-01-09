@@ -34,4 +34,3 @@ Created by kittinan, licensed under the MIT License.
 
 **All Rights Reserved.**
 This means that no materials can be used, copied, modified, or distributed without my explicit permission. For permission, please contact the repository owner.
-
