@@ -47,6 +47,9 @@
 
 &nbsp;
 
+**All Rights Reserved.**
+This means that no materials can be used, copied, modified, or distributed without my explicit permission. For permission, please contact the repository owner.
+
 This project uses code from the following repositories:
 
 - [spotify-github-profile](https://github.com/kittinan/spotify-github-profile)  
@@ -61,5 +64,3 @@ This project uses code from the following repositories:
 - [GitHub Stats](https://github.com/anuraghazra/github-readme-stats)  
   Created by anuraghazra, licensed under the MIT License.
 
-**All Rights Reserved.**
-This means that no materials can be used, copied, modified, or distributed without my explicit permission. For permission, please contact the repository owner.
