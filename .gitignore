@@ -1,0 +1,17 @@
+# Исключение папки node_modules (зависимости Node.js)
+node_modules/
+
+# Исключение файлов окружения
+.env
+
+# Исключение системных файлов
+.DS_Store
+Thumbs.db
+
+# Исключение логов
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Исключение папки кеша
+.cache/
