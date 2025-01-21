@@ -1,5 +1,5 @@
 ![Logo](https://github.com/OOUPSS/OOUPSS/blob/main/Logo%20main%20page.png?raw=true)
-
+ 
 &nbsp;
 <p align="center">
   <img src="https://github.com/OOUPSS/OOUPSS/blob/main/image%20(5).png?raw=true" alt="Centered Image">
