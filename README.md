@@ -44,6 +44,14 @@
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&bg_color=000000&quote_color=ffffff&font_color=00FFFF" alt="Quote">
 </p>
 
+<p align="center">
+  <b>My quotes</b>
+</p>
+
+<p align="center">
+[Open.html](https://github.com/OOUPSS/OOUPSS/blob/main/quotes.html)
+</p>
+
 
 &nbsp;
 
