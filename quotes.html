@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Programmer Quotes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      text-align: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Prevent scrollbars */
+    }
+    .quote-box {
+      background: #333;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+      position: relative;
+      margin-bottom: 10px;
+    }
+    .author {
+      font-size: 14px;
+      color: #bbb;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #ff9800;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      box-shadow: 0 0 15px #ff9800;
+      transition: 0.3s ease-in-out;
+    }
+    button:hover {
+      background: #e68900;
+      box-shadow: 0 0 25px #0097b8;
+    }
+    .language-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .fixed-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    /* Styles for the video background */
+    #backgroundVideo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the video covers the whole screen */
+      z-index: -1; /* Send the video to the background */
+      pointer-events: none; /* Prevent the video from interacting with other elements */
+      display: none; /* Hide the video initially */
+    }
+
+    /* Styles for the audio background */
+    #backgroundMusic {
+      display: none; /* Hide the audio element */
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-box">
+    <button id="launchButton" onclick="launchQuote()">Launch the Magic</button>
+    <p id="quote" style="display: none;">Нажмите кнопку, чтобы получить цитату!</p>
+  </div>
+
+  <p id="author" class="author" style="display: none;">Author: OOUPSS</p>
+
+  <div class="fixed-buttons" style="display: none;">
+    <button id="newQuoteButton" onclick="newQuote()">Новая цитата</button>
+    <div class="language-buttons">
+      <button onclick="changeLanguage('ru')">Русский</button>
+      <button onclick="changeLanguage('en')">English</button>
+    </div>
+    <button id="thankYouButton" onclick="thankYou()" style="display: none;">Thank you for watching</button>
+  </div>
+
+  <!-- Background Video -->
+  <video id="backgroundVideo" autoplay muted loop>
+    <source src="https://cdn.pixabay.com/video/2022/12/06/141810-778906762_large.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Background Music -->
+  <audio id="backgroundMusic" src="https://github.com/OOUPSS/OOUPSS/raw/main/pride.mp3" preload="auto"></audio>
+
+  <script>
+    const quotes = [
+      {
+        english: "Sometimes the best solutions come when you just restart your computer.",
+        russian: "Иногда лучшие решения приходят, когда ты просто перезагружаешь свой компьютер.",
+        author: "OOUPSS"
+      },
+      {
+        english: "Problem-solving often starts with: 'What if I just delete everything?'",
+        russian: "Решение проблем часто начинается с вопроса: 'А что если я просто все удалю?'",
+        author: "OOUPSS"
+      },
+      {
+        english: "Programming is when solving one problem creates another problem.",
+        russian: "Программирование — это когда решение одной проблемы порождает другую.",
+        author: "OOUPSS"
+      },
+      {
+        english: "Coding is like cooking: sometimes you follow a recipe, other times you just improvise.",
+        russian: "Кодинг похож на готовку: иногда ты следуешь рецепту, а иногда просто импровизируешь.",
+        author: "OOUPSS"
+      },
+      {
+        english: "In programming, there are no problems, only bugs that haven’t been found yet.",
+        russian: "В программировании нет проблем, есть только баги, которые еще не найдены.",
+        author: "OOUPSS"
+      },
+      {
+        english: "My code doesn't bug, it just behaves unexpectedly.",
+        russian: "Мой код не багуется, он просто ведет себя неожиданно.",
+        author: "OOUPSS"
+      },
+      {
+        english: "Mistakes aren’t bugs, they are subtle opportunities for improvement.",
+        russian: "Ошибки — это не баги, это тонкие возможности для улучшения.",
+        author: "OOUPSS"
+      },
+      {
+        english: "If programmers were philosophers, their slogan would be: 'What if the world is just buggy?'",
+        russian: "Если бы программисты были философами, их слоган был бы: 'А что если мир просто багнутый?'",
+        author: "OOUPSS"
+      },
+      {
+        english: "Don’t ask me how I did it. I don’t understand it myself.",
+        russian: "Не спрашивай, как я это сделал. Я сам не понимаю.",
+        author: "OOUPSS"
+      },
+      {
+        english: "If your code works, it means you missed something.",
+        russian: "Если твой код работает, значит, ты что-то пропустил.",
+        author: "OOUPSS"
+      },
+      {
+        english: "Programmers are the only ones who can fix the problem they themselves created.",
+        russian: "Программисты — единственные, кто может исправить проблему, которую сами же создали.",
+        author: "OOUPSS"
+      },
+      {
+        english: "Time doesn’t heal, but a restart helps.",
+        russian: "Время не лечит, но перезагрузка помогает.",
+        author: "OOUPSS"
+      },
+      {
+        english: "When your code compiles on the first try, you realize you’ve just reached the peak of your career.",
+        russian: "Когда твой код компилируется с первого раза, ты понимаешь, что только что достиг вершины своей карьеры.",
+        author: "OOUPSS"
+      },
+      {
+        english: "A programmer who doesn’t commit every hour will eventually revert to the previous state.",
+        russian: "Программист, который не коммитит каждый час, в конечном итоге откатится к предыдущему состоянию.",
+        author: "OOUPSS"
+      },
+      {
+        english: "Sometimes the only way to find a bug is to create a new one.",
+        russian: "Иногда единственный способ найти баг — создать новый.",
+        author: "OOUPSS"
+      },
+      {
+        english: "Programmers don’t build walls, they build bridges. But sometimes they forget to include the foundation.",
+        russian: "Программисты не строят стены, они строят мосты. Но иногда забывают про фундамент.",
+        author: "OOUPSS"
+      },
+      {
+        english: "You don’t realize you’re living on the edge of disaster until you encounter a bug.",
+        russian: "Ты не осознаешь, что живешь на грани катастрофы, пока не наткнешься на баг.",
+        author: "OOUPSS"
+      },
+      {
+        english: "A programmer’s life is an endless cycle: bug — fix — new bug.",
+        russian: "Жизнь программиста — это бесконечный цикл: баг — фикc — новый баг.",
+        author: "OOUPSS"
+      },
+      {
+        english: "When you write code, you’re like a magician. But only with a wand in ... and a bunch of mistakes.",
+        russian: "Когда ты пишешь код, ты словно волшебник. Только с палочкой в ... и кучей ошибок.",
+        author: "OOUPSS"
+      },
+      {
+        english: "When you first start coding, everything seems possible. A month later, you realize that almost everything is impossible.",
+        russian: "Когда ты только начинаешь кодить, кажется, что возможно всё. Через месяц понимаешь, что почти ничего невозможно.",
+        author: "OOUPSS"
+      },
+      {
+        english: "When you fix a bug, but realize you’ve created 10 new ones.",
+        russian: "Когда ты исправил баг, но осознал, что создал десять новых.",
+        author: "OOUPSS"
+      }
+    ];
+
+    const langMapping = {
+      ru: {
+        quote: 'russian',
+        author: 'Автор: ',
+        newQuote: 'Новая цитата',
+        thankYou: 'Спасибо за просмотр'
+      },
+      en: {
+        quote: 'english',
+        author: 'Author: ',
+        newQuote: 'New Quote',
+        thankYou: 'Thank you for watching'
+      }
+    };
+
+    let currentLanguage = 'en'; // Start with English language
+    let usedQuotes = []; // Array to track used quotes
+
+    function launchQuote() {
+     document.getElementById('launchButton').style.display = 'none'; // Скрыть кнопку "Launch the Magic"
+     document.getElementById('quote').style.display = 'inline'; // Показать цитату
+     document.getElementById('author').style.display = 'inline'; // Показать автора
+     document.querySelector('.fixed-buttons').style.display = 'flex'; // Показать кнопки
+     newQuote(); // Показать первую цитату
+
+  // Запуск фоновой музыки
+      const audio = document.getElementById('backgroundMusic');
+      audio.play();
+
+  // Отложенный запуск видео через 2 секунды
+     setTimeout(() => {
+      const video = document.getElementById('backgroundVideo');
+      video.style.display = 'block'; // Показать видео
+      video.play(); // Начать воспроизведение видео
+  }, 1000);
+}
+
+
+    function newQuote() {
+      if (usedQuotes.length === quotes.length) {
+        alert("All quotes have been used! Starting over.");
+        document.getElementById('thankYouButton').style.display = 'inline'; // Show the "Thank you" button
+        return; // Stop showing quotes
+      }
+
+      let randomIndex;
+      do {
+        randomIndex = Math.floor(Math.random() * quotes.length);
+      } while (usedQuotes.includes(randomIndex)); // Prevent repeated quotes
+
+      usedQuotes.push(randomIndex);
+
+      const currentQuote = quotes[randomIndex];
+      const langKey = langMapping[currentLanguage].quote;
+      document.getElementById("quote").innerText = currentQuote[langKey];
+      document.getElementById("author").innerText = langMapping[currentLanguage].author + currentQuote.author;
+      updateNewQuoteButtonText();
+    }
+
+    function changeLanguage(language) {
+      currentLanguage = language;
+      const langKey = langMapping[currentLanguage].quote;
+      const authorText = langMapping[currentLanguage].author;
+      document.getElementById("quote").innerText = quotes[usedQuotes[usedQuotes.length - 1]][langKey];
+      document.getElementById("author").innerText = authorText + quotes[usedQuotes[usedQuotes.length - 1]].author;
+      updateNewQuoteButtonText();
+    }
+
+    function updateNewQuoteButtonText() {
+      document.getElementById("newQuoteButton").innerText = langMapping[currentLanguage].newQuote;
+    }
+
+    function thankYou() {
+      alert("Thank you for watching!");
+      window.location.reload(); // Reload the page
+    }
+
+    window.onload = () => {
+      document.getElementById('quote').style.display = 'none'; // Hide quote before launch
+      document.getElementById('author').style.display = 'none'; // Hide author before launch
+      document.querySelector('.fixed-buttons').style.display = 'none'; // Hide buttons before launch
+    };
+  </script>
+</body>
+</html>
