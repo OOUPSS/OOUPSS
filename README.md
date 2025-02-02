@@ -26,7 +26,7 @@
 </p>
 
 
-![image](https://github.com/OOUPSS/OOUPSS/blob/main/wakatime/26.01.2025%20wakatime.png?raw=true)
+![image](https://github.com/OOUPSS/OOUPSS/blob/main/wakatime/02.02.2025%20wakatime.png.png?raw=true)
 <p align="right">
   <img src="https://komarev.com/ghpvc/?username=OOUPSS&style=flat-square&color=0ff0fc" alt="Profile Views">
 </p>
