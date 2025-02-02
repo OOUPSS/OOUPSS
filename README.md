@@ -49,7 +49,7 @@
 </p>
 
 <p align="center">
-[Open.html](https://github.com/OOUPSS/OOUPSS/blob/main/quotes.html)
+[Open.html](https://ooupss.github.io/OOUPSS/quotes.html)
 </p>
 
 
