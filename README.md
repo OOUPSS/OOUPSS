@@ -18,22 +18,15 @@
 
 | ![Image](https://github.com/OOUPSS/OOUPSS/blob/main/image%20(9).png?raw=true) | ![GIF](https://github.com/OOUPSS/OOUPSS/blob/main/ezgif-6-8ec470d45b-unscreen.gif?raw=true) |
 |-----------------------------------------|-------------------------------------------------------------|
-
-&nbsp;
-
-<p align="center">
-  <img src="https://github.com/OOUPSS/OOUPSS/blob/main/image%20(3).png?raw=true" alt="Centered Image">
-</p>
-
-
-![image](https://github.com/OOUPSS/OOUPSS/blob/main/wakatime/02.02.2025%20wakatime.png.png?raw=true)
 <p align="right">
   <img src="https://komarev.com/ghpvc/?username=OOUPSS&style=flat-square&color=0ff0fc" alt="Profile Views">
 </p>
+&nbsp;
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&pause=1000&color=00FFFF&background=000000&width=600&lines=THANK+YOU+FOR+WATCHING,+BRO!" alt="Custom Status">
 </p>
+
 
 
 <p align="center">
