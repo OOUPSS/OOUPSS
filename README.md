@@ -10,7 +10,7 @@
 &nbsp;
 
 <p align="center">
-  <img src="https://github.com/OOUPSS/OOUPSS/blob/main/image%20(4).png?raw=true" alt="Centered Image">
+  <img src="https://github.com/OOUPSS/OOUPSS/blob/main/About%20me.png?raw=true" alt="Centered Image">
 </p>
 &nbsp;
 
