@@ -2,7 +2,7 @@
  
 &nbsp;
 <p align="center">
-  <img src="https://github.com/OOUPSS/OOUPSS/blob/main/image%20(5).png?raw=true" alt="Centered Image">
+  <img src="https://github.com/OOUPSS/OOUPSS/blob/main/WELC.png?raw=true" alt="Centered Image">
 </p>
 &nbsp;
 
