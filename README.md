@@ -1,6 +1,5 @@
 ![Logo](https://github.com/OOUPSS/OOUPSS/blob/main/Log.png?raw=true)
  
-&nbsp;
 <p align="center">
   <img src="https://github.com/OOUPSS/OOUPSS/blob/main/WELC.png?raw=true" alt="Centered Image">
 </p>
