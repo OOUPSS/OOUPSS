@@ -1,4 +1,4 @@
-![Logo](https://github.com/OOUPSS/OOUPSS/blob/main/Logo%20main%20page.png?raw=true)
+![Logo](https://github.com/OOUPSS/OOUPSS/blob/main/Log.png?raw=true)
  
 &nbsp;
 <p align="center">
