@@ -20,7 +20,7 @@
 &nbsp;
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&pause=1000&color=00FFFF&background=000000&width=600&lines=THANK+YOU+FOR+WATCHING,+BRO!" alt="Custom Status">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=35&pause=1000&color=BFBFBF&center=true&vCenter=true&multiline=false&background=00000000&width=600&lines=THANK+YOU+FOR+WATCHING,+BRO!" alt="Custom Status">
 </p>
 
 
