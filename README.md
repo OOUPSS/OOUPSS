@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  <img src="https://github.com/OOUPSS/OOUPSS/blob/main/About%20me.png?raw=true" alt="Centered Image">
+  <img src="https://github.com/OOUPSS/OOUPSS/blob/main/About1.png?raw=true" alt="Centered Image">
 </p>
 
 | ![Image](https://github.com/OOUPSS/OOUPSS/blob/main/image%20(9).png?raw=true) | ![GIF](https://github.com/OOUPSS/OOUPSS/blob/main/ezgif-6-8ec470d45b-unscreen.gif?raw=true) |
