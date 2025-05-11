@@ -26,7 +26,7 @@
 
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=OOUPSS&show_icons=true&theme=dark&bg_color=000000&title_color=0ff0fc&icon_color=5eff00&text_color=ffffff&border_color=00FFFF&card_width=550" alt="GitHub Stats">
+  <img src="https://github-readme-stats.vercel.app/api?username=OOUPSS&show_icons=true&theme=default&bg_color=00000000&title_color=BFBFBF&icon_color=BFBFBF&text_color=BFBFBF&border_color=000000&card_width=550" alt="GitHub Stats">
 </p>
 
 <p align="center">
