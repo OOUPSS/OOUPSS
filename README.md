@@ -12,7 +12,7 @@
   <img src="https://github.com/OOUPSS/OOUPSS/blob/main/About1.png?raw=true" alt="Centered Image">
 </p>
 
-| ![Image](https://github.com/OOUPSS/OOUPSS/blob/main/ubuny1.png?raw=true) | ![GIF](https://github.com/OOUPSS/OOUPSS/blob/main/ezgif-6-8ec470d45b-unscreen.gif?raw=true) |
+| ![Image](https://github.com/OOUPSS/OOUPSS/blob/main/hfrge.png?raw=true) | ![GIF](https://github.com/OOUPSS/OOUPSS/blob/main/ezgif-6-8ec470d45b-unscreen.gif?raw=true) |
 |-----------------------------------------|-------------------------------------------------------------|
 <p align="right">
   <img src="https://komarev.com/ghpvc/?username=OOUPSS&style=flat-square&color=0ff0fc" alt="Profile Views">
